@@ -1,0 +1,138 @@
+.p-rating .p-rating-item.p-rating-item-active .p-rating-icon {
+    color: #ffc800; 
+    /* color: #d9ac3a; */
+}
+/* Container Styles */
+.products-container {
+    min-height: 100vh;
+    padding: 20px;
+    transition: background 0.3s ease;
+}
+
+/* Card Styles */
+.card-holographic {
+    background: linear-gradient(45deg, #34aadce7, #8338ecde,#e61aa2d5,#9eedf3d5, #3a85ffe1, #06ffa4c3, #ffbe0b, #ff0000a5);
+    background-size: 400% 400%;
+    animation: holographic 25s ease-in-out infinite;
+    padding: 2px;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    transition: all 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Card Inner Content */
+.card-inner {
+    padding: 1rem;
+    border-radius: 18px;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card-inner.holographic {
+    background: rgb(255, 255, 255);
+    backdrop-filter: none;
+}
+
+/* Hover Effects */
+.card-holographic:hover {
+    transform: scale(1.05) rotateY(5deg);
+    /* animation-duration: 0.8s; */
+}
+
+
+/* Text Styles */
+.product-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.product-title.holographic {
+    background: linear-gradient(45deg, #8338ec, #3a86ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.product-price.holographic {
+    background: linear-gradient(45deg, #f72e85, #f8b809dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Category and Status Styles */
+.category-icon.holographic {
+    color: #8338ec;
+}
+
+.category-text.holographic {
+    color: #212529;
+    font-weight: 600;
+}
+
+/* Button Styles */
+.cart-button {
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.cart-button.holographic {
+    background: linear-gradient(45deg, #8338ec, #3a86ff);
+    border: none;
+    /* box-shadow: 0 4px 15px rgba(131, 56, 236, 0.4); */
+}
+
+.cart-button.holographic:hover {
+    transform: scale(1.5) rotate(360deg);
+    /* box-shadow: 0 6px 1px rgba(131, 56, 236, 0.6); */
+}
+
+/* Style Toggle Buttons */
+.style-toggle-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Animations */
+@keyframes holographic {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes shine {
+    0% { opacity: 0; transform: translateX(-100%); }
+    50% { opacity: 1; transform: translateX(0%); }
+    100% { opacity: 0; transform: translateX(100%); }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .products-container {
+        padding: 10px;
+    }
+    
+
+    .product-title {
+        font-size: 1.25rem;
+    }
+    
+    .product-price {
+        font-size: 1.25rem;
+    }
+}
+.centered-description {
+    text-align: center;
+    width: 100%;
+}

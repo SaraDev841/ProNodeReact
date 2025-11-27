@@ -1,0 +1,64 @@
+.sticky-header {
+  /* position: sticky; */
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* נראות יפה עם הצללה קלה */
+ position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: white;
+/* margin-bottom: 10px; */
+
+}
+.page-content {
+  padding-bottom: 100px; /* תלוי בגובה ה-Menubar */
+}
+
+.transparent-button {
+  position: absolute;
+  /* top: 30px;
+  left: 50px; */
+  margin-top: 65rem;
+  /* margin-left: 50rem; */
+  padding: 12px 24px;
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+  border: 2px solid rgb(250, 249, 249);
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  margin-left: 38em;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 10;
+  animation: rotateFade 1.5s ease-in-out forwards;
+  /* animation-delay: 13s; */
+  /* animation-iteration-count: forwards; */
+}
+
+.transparent-button:hover {
+  transform: translateY(-3px) scale(1.03);
+  background-color: rgba(255, 255, 255, 0.82);
+  color: rgb(178, 77, 228);
+}
+video{
+  position: absolute;
+}
+
+@keyframes rotateFade {
+  0% {
+    opacity: 0;
+    scale: 0.5;
+    /* transform: rotate(-180deg) scale(0.5); */
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+    /* transform: rotate(0deg) scale(1); */
+  }
+}

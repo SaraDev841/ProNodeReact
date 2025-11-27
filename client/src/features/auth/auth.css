@@ -1,0 +1,90 @@
+.formlr-holo {
+    background: linear-gradient(45deg, #34aadce7, #8338ecde, #e61aa2d5, #9eedf3d5, #3a85ffe1, #06ffa4c3, #ffbe0b, #ff0000a5);
+    background-size: 700% 700%;
+    animation: holographic 25s ease-in-out infinite;
+    padding: 4px;
+      border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    transition: transform 0.4s ease;
+
+}
+
+.formlr {
+    background-color: white;
+    border-radius: 16px;
+    padding: 2rem;
+    width: 100%;
+}
+
+form {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formlr-holo:hover {
+    transform: scale(1.08) rotate(0.5deg);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* .text{
+    background: linear-gradient(45deg, #f72e85, #f8b809dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-style: linear-gradient(25deg, #8338ec, #3a86ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+} */
+ /* .text {
+  background: linear-gradient(20deg, #f72e85, #f8b809dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+} */
+ .text {
+  background: linear-gradient(45deg, #f72e85, #f8b809dc, #f72e85, #f8b809dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: background 0.5s ease-in-out;
+}
+
+.text:hover {
+  background: linear-gradient(45deg, #06ffa4c3,#9eedf3d5, #3a85ffe1, #06ffa4c3,#9eedf3d5, #3a85ffe1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes holographic {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
